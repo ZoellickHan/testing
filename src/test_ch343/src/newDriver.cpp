@@ -35,10 +35,9 @@ Port::~Port(){}
 
 SerialConfig::~SerialConfig(){}
 
-void Port::test_receive()
+int Port::test_receive()
 {
 	num_per_read = read(fd, RxBuff, sizeof(RxBuff));
-	num_read += num_per_read;
 	
 	for(int a=0;a<num_per_read;a++)
 	{
@@ -48,10 +47,14 @@ void Port::test_receive()
 			printf("error!!! the error is: %d \n  ",RxBuff[a]);
 		}
 	}
+
+	if(num_per_read>0)	return num_per_read;
+	else	return -1;
+
 }
 
 
-void Port::test_transmit()
+int Port::test_transmit()
 {
 
 }

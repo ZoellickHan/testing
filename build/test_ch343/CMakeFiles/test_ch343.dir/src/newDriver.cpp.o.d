@@ -1,7 +1,7 @@
 CMakeFiles/test_ch343.dir/src/newDriver.cpp.o: \
- /home/zoellickhan/Code/testing/src/test_ch343/src/newDriver.cpp \
+ /home/zoellickhan/Code/2024CV/ws_testROS/src/test_ch343/src/newDriver.cpp \
  /usr/include/stdc-predef.h \
- /home/zoellickhan/Code/testing/src/test_ch343/src/newDriver.hpp \
+ /home/zoellickhan/Code/2024CV/ws_testROS/src/test_ch343/src/newDriver.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
