@@ -50,10 +50,10 @@ int main(int argc, char **argv)
         sum += single;
 
         clock_gettime(CLOCK_MONOTONIC, &ts2);
-        period = last_time - ts2.tv_sec;
-
-        if(period != 0) throughput = port->getNumRead()/period*10000;
-        printf("time: %ld, throuhtput: %f \n",period,throughput);
+        period = ts2.tv_sec - last_time;
+last_time 
+        if(period != 0) throughput = sum/period;
+        printf("time: %f, throuhtput: %f \n",period,throughput);
     }   
 
     rclcpp::spin(node);
